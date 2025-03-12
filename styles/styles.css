@@ -1,0 +1,313 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  font-family: spotify;
+  color: white;
+}
+
+@font-face {
+  font-family: 'spotify';
+  src: url('../font/circular-black.ttf');
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  padding: 1rem;
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  height: 60px; 
+}
+
+nav input {
+  padding: 0.2rem;
+  border: none;
+  border-radius: 0.5rem;
+  width: 100%;
+  font-size: 1rem;
+  color: #a8a9a2;
+  background-color: #282424;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: rgb(213, 213, 213);
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: white;
+  text-decoration: none;
+  transition: ease-in 0.1s;
+}
+
+nav img {
+  width: 70px;
+}
+
+nav img:hover {
+  cursor: pointer;
+}
+
+.banner {
+  background-image: url('../img/banner.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  background-position: center;
+  background-attachment: fixed;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 15px;
+}
+
+.verifed {
+  display: flex; 
+  align-items: center;
+  gap: 1rem;
+}
+
+.banner-items {
+  margin: 2rem;
+}
+
+.banner h1 {
+  font-size: 6rem;
+}
+
+body {
+  background-color: black;
+}
+
+main {
+  background-image: linear-gradient(to bottom, #441ca2 10%, #181414 50%);
+  margin: 60px 10px;
+  border-radius: 15px;
+}
+
+.play-btn {
+  width: 50px;
+}
+
+.play-btn:hover{
+  width: 50px;
+  transform: scale(1.1, 1.1);
+  transition: ease-in 0.2s;
+}
+
+.play-line {
+  align-items: center;
+  display: flex;
+  margin: 20px;
+  gap: 2rem;
+}
+
+.play-line button {
+  background-color: transparent;
+  color: white;
+  border: solid 1px white;
+  padding: 0.6rem;
+  border-radius: 15px;
+}
+
+.play-line button:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  transform: scale(1.1, 1.1);
+  transition: ease-in 0.2s;
+
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+.pop-title {
+  margin-top: 3rem;
+  margin-left: 2.3rem;
+}
+
+table img {
+  border-radius: 4px;
+  width: 40px;
+  height: 40px;
+}
+
+.canciones {
+  width: 100%;
+  border-collapse: collapse; 
+}
+
+.canciones td {
+  padding: 10px;
+  vertical-align: middle;
+  text-align: left;
+}
+
+.canciones img {
+  display: block;
+  margin: auto;
+}
+
+.canciones tr {
+  align-items: center;
+  transition: background-color 0.1s ease-in;
+}
+
+.canciones tr:hover {
+  background-color: #302c2c;
+  transition: background-color 0.1s ease-in;
+
+}
+
+.canciones td a {
+  text-decoration: none;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.canciones td a:hover {
+  display: inline;
+  text-decoration: underline;
+}
+
+.see-more {
+  display: inline-block;
+  margin-top: 20px;
+  color:#959393;
+  text-decoration: none;
+  align-self: flex-start;
+}
+
+.see-more:hover {
+  color:#c1bfbf;
+}
+
+.disc-line {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.disc-line span a {
+  color: #a2a2a2;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.disc-line span a:hover {
+  color: #cdcdcd;
+  display: inline;
+}
+
+.disc-btn {
+  display: flex;
+  margin: 10px 20px 20px 10px;
+  gap: 1rem;
+}
+
+.disc-btn button:first-child {
+  color: black;
+  background-color: white;
+}
+
+.disc-btn button {
+  border-radius: 15px;
+  padding: 0.5rem;
+  color: white;
+  background-color: #201c1c;
+}
+
+.disc-btn button:hover:first-child {
+  background-color: #d2d2d2;
+  transition: ease-in-out 0.1s;
+  cursor: pointer;
+}
+
+.disc-btn button:hover {
+  background-color: #3b3737;
+  transition: ease-in-out 0.1s;
+  cursor: pointer;
+}
+
+.discografia {
+  display: flex;
+  justify-content: space-between;
+}
+
+.disco {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border-radius: 15px;
+  transition: background-color 0.1s ease-in, color 0.1s ease-in;
+}
+
+.disco:hover {
+  background-color: #3f3f3f;
+  color: white;
+  cursor: pointer;
+}
+
+.disco img {
+  width: 200px;
+  height: 230px;
+  border-radius: 15px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.disco p {
+  color: rgb(134, 134, 134);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #282424;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #3f3f3f;
+}
+
+::-webkit-scrollbar-track {
+  background-color: black;
+  border-radius: 10px;
+}
